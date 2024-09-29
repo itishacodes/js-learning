@@ -57,3 +57,30 @@ const myFunc = function() {      // function
 }
 
 console.log(typeof myFunc);
+
+
+// ******************************
+
+// stack memory (used in primitive types)
+// heap memory (used in non-primitive types)
+
+
+let myusername = "itishacodes" // stack memory example
+let anothername = myusername;
+anothername = "itishamaheshwari."
+
+console.log(myusername);
+console.log(anothername);
+
+let userOne = { // heap memory example
+    email : "user@google.com",
+    upi : "user@ybl"
+}
+
+let userTwo = userOne
+
+userTwo.email = "itisha@gmail.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
+
